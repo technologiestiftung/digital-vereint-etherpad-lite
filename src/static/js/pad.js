@@ -522,6 +522,7 @@ const pad = {
     pad.collabClient.setOnClientMessage(pad.handleClientMessage);
     pad.collabClient.setOnChannelStateChange(pad.handleChannelStateChange);
     pad.collabClient.setOnInternalAction(pad.handleCollabAction);
+    pad.collabClient.setChannelState('CONNECTED');
 
     // load initial chat-messages
     if (clientVars.chatHead !== -1) {
