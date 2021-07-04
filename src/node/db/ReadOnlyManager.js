@@ -41,8 +41,8 @@ exports.getReadOnlyId = async (padId) => {
   // there is no readOnly Entry in the database, let's create one
   if (readOnlyId == null) {
     readOnlyId = `r.${randomString(16)}`;
-    db.set(`pad2readonly:${padId}`, readOnlyId);
-    db.set(`readonly2pad:${readOnlyId}`, padId);
+    await db.set(`pad2readonly:${padId}`, readOnlyId);
+    await db.set(`readonly2pad:${readOnlyId}`, padId);
   }
 
   return readOnlyId;
@@ -52,7 +52,7 @@ exports.getReadOnlyId = async (padId) => {
  * returns the padId for a read only id
  * @param {String} readOnlyId read only id
  */
-exports.getPadId = (readOnlyId) => db.get(`readonly2pad:${readOnlyId}`);
+exports.getPadId = async (readOnlyId) => await db.get(`readonly2pad:${readOnlyId}`);
 
 /**
  * returns the padId and readonlyPadId in an object for any id
