@@ -41,8 +41,10 @@ exports.getReadOnlyId = async (padId) => {
   // there is no readOnly Entry in the database, let's create one
   if (readOnlyId == null) {
     readOnlyId = `r.${randomString(16)}`;
-    await db.set(`pad2readonly:${padId}`, readOnlyId);
-    await db.set(`readonly2pad:${readOnlyId}`, padId);
+    await Promise.all([
+      db.set(`pad2readonly:${padId}`, readOnlyId),
+      db.set(`readonly2pad:${readOnlyId}`, padId),
+    ]);
   }
 
   return readOnlyId;
