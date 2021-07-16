@@ -1,6 +1,6 @@
 'use strict';
 
-xdescribe('Admin Troupbleshooting page', function () {
+describe('Admin Troupbleshooting page', function () {
   before(async function () {
     let success = false;
     $.ajax({
