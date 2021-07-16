@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Plugins page', function () {
+xdescribe('Plugins page', function () {
   function timeout(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
