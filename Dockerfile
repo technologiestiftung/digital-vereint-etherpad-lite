@@ -13,7 +13,7 @@ LABEL maintainer="Etherpad team, https://github.com/ether/etherpad-lite"
 #
 # EXAMPLE:
 #   ETHERPAD_PLUGINS="ep_codepad ep_author_neat"
-ARG ETHERPAD_PLUGINS=
+ARG ETHERPAD_PLUGINS="ep_font_color ep_font_size ep_font_family ep_image_upload"
 
 # Control whether abiword will be installed, enabling exports to DOC/PDF/ODT formats.
 # By default, it is not installed.
@@ -49,8 +49,8 @@ ARG EP_GID=0
 ARG EP_SHELL=
 RUN groupadd --system ${EP_GID:+--gid "${EP_GID}" --non-unique} etherpad && \
     useradd --system ${EP_UID:+--uid "${EP_UID}" --non-unique} --gid etherpad \
-        ${EP_HOME:+--home-dir "${EP_HOME}"} --create-home \
-        ${EP_SHELL:+--shell "${EP_SHELL}"} etherpad
+    ${EP_HOME:+--home-dir "${EP_HOME}"} --create-home \
+    ${EP_SHELL:+--shell "${EP_SHELL}"} etherpad
 
 ARG EP_DIR=/opt/etherpad-lite
 RUN mkdir -p "${EP_DIR}" && chown etherpad:etherpad "${EP_DIR}"
@@ -61,11 +61,11 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     mkdir -p /usr/share/man/man1 && \
     apt-get -qq update && \
     apt-get -qq --no-install-recommends install \
-        ca-certificates \
-        git \
-        ${INSTALL_ABIWORD:+abiword} \
-        ${INSTALL_SOFFICE:+libreoffice} \
-        && \
+    ca-certificates \
+    git \
+    ${INSTALL_ABIWORD:+abiword} \
+    ${INSTALL_SOFFICE:+libreoffice} \
+    && \
     apt-get -qq clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -84,7 +84,7 @@ COPY --chown=etherpad:etherpad ./ ./
 # seems to confuse tools such as `npm outdated`, `npm update`, and some ESLint
 # rules.
 RUN { [ -z "${ETHERPAD_PLUGINS}" ] || \
-      npm install --no-save ${ETHERPAD_PLUGINS}; } && \
+    npm install --no-save ${ETHERPAD_PLUGINS}; } && \
     src/bin/installDeps.sh && \
     rm -rf ~/.npm
 

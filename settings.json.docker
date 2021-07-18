@@ -102,7 +102,7 @@
   /*
    * Name your instance!
    */
-  "title": "${TITLE:Etherpad}",
+  "title": "${TITLE:Digital Vereint Etherpad}",
 
   /*
    * Pathname of the favicon you want to use. If null, the skin's favicon is
@@ -149,7 +149,7 @@
    * "full-width-editor" variant (by default editor is rendered as a page, with
    * a max-width of 900px).
    */
-  "skinVariants": "${SKIN_VARIANTS:super-light-toolbar super-light-editor light-background}",
+  "skinVariants": "${SKIN_VARIANTS:super-dark-toolbar super-light-editor dark-background}",
 
   /*
    * IP and port which Etherpad should bind at.
