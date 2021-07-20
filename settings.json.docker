@@ -219,7 +219,7 @@
   /*
    * The default text of a pad
    */
-  "defaultPadText" : "${DEFAULT_PAD_TEXT:Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at https:\/\/etherpad.org\n}",
+  "defaultPadText" : "${DEFAULT_PAD_TEXT:Willkommen beim Digital Vereint Etherpad!\n\nAlles, was Du hier schreibst, wird automatisch gespeichert. Andere Nutzer:innen mit dem Link zu dieser Seite können so in Echtzeit mit Dir zusammen arbeiten.\n\n\Bitte beachte, dass Deine Informationen öffentlich für alle zugänglich sind, die den Link kennen, daher solltest Du auf private Informationen, etwa Passwörter, verzichten.n\nWeitere Informationen zu Etherpad findest Du hier: https:\/\/etherpad.org\n\nDiesen Text kann Du einfach markieren und löschen. Viel Spaß, Dein Team von Digital Vereint.\n}",
 
   /*
    * Default Pad behavior.
@@ -271,7 +271,7 @@
   /*
    * Should we suppress errors from being visible in the default Pad Text?
    */
-  "suppressErrorsInPadText": "${SUPPRESS_ERRORS_IN_PAD_TEXT:false}",
+  "suppressErrorsInPadText": "${SUPPRESS_ERRORS_IN_PAD_TEXT:true}",
 
   /*
    * If this option is enabled, a user must have a session to access pads.
