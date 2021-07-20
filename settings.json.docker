@@ -219,7 +219,7 @@
   /*
    * The default text of a pad
    */
-  "defaultPadText" : "${DEFAULT_PAD_TEXT:Willkommen beim Digital Vereint Etherpad!\n\nAlles, was Du hier schreibst, wird automatisch gespeichert. Andere Nutzer:innen mit dem Link zu dieser Seite können so in Echtzeit mit Dir zusammen arbeiten.\n\nBitte beachte, dass Deine Informationen öffentlich für alle zugänglich sind, die den Link kennen, daher solltest Du auf private Informationen, etwa Passwörter, verzichten.n\nWeitere Informationen zu Etherpad findest Du hier: https:\/\/etherpad.org\n\nDiesen Text kann Du einfach markieren und löschen. Viel Spaß, Dein Team von Digital Vereint.\n}",
+  "defaultPadText" : "${DEFAULT_PAD_TEXT:Willkommen beim Digital Vereint Etherpad!\n\nAlles, was Du hier schreibst, wird automatisch gespeichert. Andere Nutzer:innen mit dem Link zu dieser Seite können so in Echtzeit mit Dir zusammen arbeiten. Bitte beachte, dass Deine Informationen öffentlich für alle zugänglich sind, die den Link kennen, daher solltest Du auf private Informationen, etwa Passwörter, verzichten.\nWeitere Informationen zu Etherpad findest Du hier: https:\/\/etherpad.org\n\nDiesen Text kann Du einfach markieren und löschen.\nViel Spaß, Dein Team von Digital Vereint.\n}",
 
   /*
    * Default Pad behavior.
