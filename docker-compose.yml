@@ -9,6 +9,7 @@ services:
       DB_PASS: ${POSTGRES_PASSWORD}
       DB_NAME: ${POSTGRES_DB}
       DB_PORT: ${POSTGRES_PORT}
+      DB_TYPE: ${POSTGRES_TYPE}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD}
     ports:
       - 3000:9001

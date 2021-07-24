@@ -205,7 +205,7 @@
    * https://www.npmjs.com/package/ueberdb2
    */
 
-  "dbType": "${DB_TYPE:postgres}",
+  "dbType": "${DB_TYPE}",
   "dbSettings": {
     "host":     "${DB_HOST}",
     "port":     "${DB_PORT}",
