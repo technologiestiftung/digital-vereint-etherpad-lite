@@ -96,3 +96,5 @@ RUN chmod -R g=u .
 
 EXPOSE 9001
 CMD ["node", "src/node/server.js"]
+
+

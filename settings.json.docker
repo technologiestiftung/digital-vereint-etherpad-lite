@@ -205,13 +205,13 @@
    * https://www.npmjs.com/package/ueberdb2
    */
 
-  "dbType": "${DB_TYPE:dirty}",
+  "dbType": "${DB_TYPE:postgres}",
   "dbSettings": {
-    "host":     "${DB_HOST:undefined}",
-    "port":     "${DB_PORT:undefined}",
-    "database": "${DB_NAME:undefined}",
-    "user":     "${DB_USER:undefined}",
-    "password": "${DB_PASS:undefined}",
+    "host":     "${DB_HOST}",
+    "port":     "${DB_PORT}",
+    "database": "${DB_NAME}",
+    "user":     "${DB_USER}",
+    "password": "${DB_PASS}",
     "charset":  "${DB_CHARSET:undefined}",
     "filename": "${DB_FILENAME:var/dirty.db}"
   },
@@ -378,7 +378,7 @@
   /*
    * Privacy: disable IP logging
    */
-  "disableIPlogging": "${DISABLE_IP_LOGGING:false}",
+  "disableIPlogging": "${DISABLE_IP_LOGGING:true}",
 
   /*
    * Time (in seconds) to automatically reconnect pad when a "Force reconnect"
