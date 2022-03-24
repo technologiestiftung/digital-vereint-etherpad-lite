@@ -1,3 +1,7 @@
+This is a fork of [ether/etherpad-lite](https://github.com/ether/etherpad-lite). Below is the original README.
+
+---
+
 # A real-time collaborative editor for the web
 
 ![Demo Etherpad Animated Jif](doc/images/etherpad_demo.gif "Etherpad in action")
